@@ -1,3 +1,6 @@
+PImage italianFood;
+PImage americanFood;
+
 void setup() {
   size(750, 800);
   background(255);
@@ -8,13 +11,16 @@ void setup() {
   text("MY RESTAURANT EXPERIENCES", 35, 50);
 
   italianFood = loadImage("italianfood.jpg");
+  americanFood = loadImage("americanfood.jpg");
 }
  
 
 void draw(){
   background(255);
+  
 
   image(italianFood, 80, 500, 100, 100);
+  image(americanFood, 200,500,100,100);
   
   fill(255,248,229);
   stroke(255,248,229);
@@ -25,8 +31,11 @@ void draw(){
   textSize(27);
   text("MY RESTAURANT EXPERIENCES", 35, 50);
   
-  fill(183,85,85);
+
+    fill(108,68,8);
   textSize(20);
+  
+  text("AMERICAN",200,625);
   text("ITALIAN",90,625);
   
     if (mouseX > 80 & mouseX < 180 &&
@@ -38,9 +47,19 @@ void draw(){
         
         textSize(20);
         text("£25.00",100,245);
-  
-  
       }
+      
+         if (mouseX > 200 & mouseX < 300 &&
+      mouseY > 500 & mouseY < 600) {
+        
+        fill(22,155,98);
+        noStroke();
+        rect(225,411,50,89);
+        
+        textSize(20);
+        text("£8.90",225,406);
+      }
+  
+  
 }
 
-  
