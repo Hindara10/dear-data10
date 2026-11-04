@@ -4,11 +4,16 @@ PImage americanFood;
 void setup() {
   size(750, 800);
   background(255);
+  
+
 
   textFont(createFont("Arial", 14));
   fill(47, 115, 185);
   textSize(27);
   text("MY RESTAURANT EXPERIENCES", 35, 50);
+
+
+
 
   italianFood = loadImage("italianfood.jpg");
   americanFood = loadImage("americanfood.jpg");
@@ -30,7 +35,9 @@ void draw(){
   fill(47, 115, 185);
   textSize(27);
   text("MY RESTAURANT EXPERIENCES", 35, 50);
-  
+  textSize(14);
+  fill(0);
+    text("HOVER OVER IMAGE TO SEE DATA", 35,90);
 
     fill(108,68,8);
   textSize(20);
@@ -59,7 +66,7 @@ void draw(){
         textSize(20);
         text("£8.90",225,406);
       }
-  
-  
 }
+
+
 
