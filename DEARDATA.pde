@@ -27,7 +27,7 @@ void draw(){
   image(italianFood, 80, 500, 100, 100);
   image(americanFood, 200,500,100,100);
   
-  fill(255,248,229);
+  fill(255,248,228);
   stroke(255,248,229);
   rect(70,600,600,30);
  
